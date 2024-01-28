@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/musafir-V/log-grepper/internal/model"
 	"net/http"
 
 	"github.com/aws/aws-sdk-go/aws"
@@ -15,9 +16,9 @@ import (
 
 func main() {
 	sess, err := session.NewSession(&aws.Config{
-		Endpoint:    aws.String("http://localhost:4566"),
-		Region:      aws.String("us-east-1"),
-		Credentials: credentials.NewStaticCredentials("0", "0", ""),
+		Endpoint:    aws.String(model.Config.Region),
+		Region:      aws.String(model.Config.Region),
+		Credentials: credentials.NewStaticCredentials(model.Config.AccessKeyID, model.Config.SecretAccessKey, ""),
 	})
 	if err != nil {
 		panic(err)
