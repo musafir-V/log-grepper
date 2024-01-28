@@ -23,8 +23,8 @@
 ## Running the service
 1. Run go run main.go
 2. Run curl -X GET curl -X GET http://localhost:8080/search\?from\='2022-01-01'\&to\='2022-01-01'\&search_keyword\='error'
+<img width="805" alt="Screenshot 2024-01-28 at 9 47 48 PM" src="https://github.com/musafir-V/log-grepper/assets/60506099/81a2bdb4-593b-44cf-bdf7-a48d2971396a">
 
-![Screenshot 2024-01-28 at 9.47.48 PM.png](..%2F..%2F..%2F..%2F..%2FDesktop%2FScreenshot%202024-01-28%20at%209.47.48%20PM.png)
 
 ## Running the tests
 1. Run go test ./...
